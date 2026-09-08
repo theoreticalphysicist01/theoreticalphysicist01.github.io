@@ -12,7 +12,11 @@ OWNER_NAMES = {"Zeng-Zhao Li", "Z.-Z. Li"}
 
 
 def author_list(authors):
-    marked = [f"<strong>{html.escape(name)}</strong>" if name in OWNER_NAMES else html.escape(name) for name in authors]
+    marked = []
+    for name in authors:
+        escaped = html.escape(name)
+        bare_name = name.rstrip("*").strip()
+        marked.append(f"<strong>{escaped}</strong>" if bare_name in OWNER_NAMES else escaped)
     if len(marked) < 2:
         return "".join(marked)
     return ", ".join(marked[:-1]) + " and " + marked[-1]
@@ -37,6 +41,8 @@ def entry(pub, indent):
     ]
     if links:
         lines.append(f'{indent}  <div class="citation-links">{"".join(links)}</div>')
+    if pub.get("note"):
+        lines.append(f'{indent}  <p class="publication-note">{html.escape(pub["note"])}</p>')
     lines.append(f'{indent}</article>')
     return "\n".join(lines)
 
