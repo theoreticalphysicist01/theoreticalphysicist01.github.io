@@ -5,7 +5,7 @@ A lightweight, framework-free academic homepage built with semantic HTML, CSS, a
 ## Update the site
 
 - Edit biography and research text in `index.html`.
-- Add or update papers in `data/publications.json`. The pages sort and group entries automatically; set `selected` to `true` to include an item on the homepage.
+- Add or update papers in `data/publications.json`, then run `python3 scripts/build_publications.py`. The script sorts and groups entries automatically; set `selected` to `true` to include an item on the homepage.
 - Replace the typographic portrait in `index.html` with an image in `assets/` when a portrait is available.
 - Restore the commented profile-link locations in the HTML only after the official CV, ORCID, and Google Scholar URLs are confirmed.
 
