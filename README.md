@@ -7,8 +7,7 @@ A lightweight, framework-free academic homepage built with semantic HTML, CSS, a
 - Edit biography and research text in `index.html`.
 - Add or update papers in `data/publications.json`. The pages sort and group entries automatically; set `selected` to `true` to include an item on the homepage.
 - Replace the typographic portrait in `index.html` with an image in `assets/` when a portrait is available.
-- Replace `assets/cv.pdf` with the current CV while keeping the filename unchanged.
-- Replace the ORCID placeholder URL in `index.html` once the identifier is confirmed.
+- Restore the commented profile-link locations in the HTML only after the official CV, ORCID, and Google Scholar URLs are confirmed.
 
 Because browsers block `fetch()` for local `file://` pages, preview with a local server:
 
