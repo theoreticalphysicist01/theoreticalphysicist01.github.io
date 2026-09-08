@@ -19,9 +19,9 @@ Then visit `http://localhost:8000`.
 
 ## Deploy with GitHub Pages
 
-1. Create a public GitHub repository named `zengzhaoli.github.io`.
+1. Create a public GitHub repository named `theoreticalphysicist01.github.io`.
 2. Push this folder to the repository's `main` branch.
 3. In **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/ (root)`.
-4. GitHub will publish the site at <https://zengzhaoli.github.io/>. No build workflow is required.
+4. GitHub will publish the site at <https://theoreticalphysicist01.github.io/>. No build workflow is required.
 
 If the GitHub username differs, rename the repository to `<github-username>.github.io` and update canonical/Open Graph URLs in both HTML files.
